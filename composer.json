@@ -1,0 +1,32 @@
+{
+    "name": "stonkeep/pacote-test",
+    "description": "Criando um novo package para Laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateus Galasso",
+            "email": "mateusgalasso@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "orchestra/testbench": "4.x-dev"
+    },
+    "autoload": {
+        "psr-4": {
+            "stonkeep\\PacoteTest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "stonkeep\\PacoteTest\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers":[
+                "stonkeep\\PacoteTest\\PacoteTesteBaseServiceProvider"
+            ]
+        }
+    }
+}
